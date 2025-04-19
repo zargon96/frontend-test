@@ -1,0 +1,94 @@
+<section class="d-flex flex-column justify-content-end text-white position-relative">
+    <div class="navbar-container sticky-top">
+      <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/src/assets/img/Logo.svg" alt="Logo" width="64" height="64" class="me-2" loading="lazy" />
+          </a>
+          <button id="burger" class="hamburger hamburger--spin d-lg-none" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item"><a class="nav-link text-white" href="#">Pirate</a></li>
+              <li class="nav-item parrots-wrapper position-relative">
+                <a class="nav-link d-flex align-items-center gap-2 text-white" id="parrotsTrigger" href="#">
+                  Parrots
+                  <img src="/src/assets/img/arrow-down.svg" class="arrow-icon" alt="Arrow" loading="lazy" />
+                </a>
+              </li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Ships</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Events</a></li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block ms-auto">
+            <a href="#" class="btn btn-warning fw-semibold px-3 btn-contacts">Contacts</a>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="parrots-bar">
+        <div class="container d-flex gap-4 py-2 px-3">
+          <a href="#" class="fw-semibold text-dark text-decoration-underline">Red</a>
+          <a href="#" class="fw-semibold text-dark text-decoration-underline">Violet</a>
+          <a href="#" class="fw-semibold text-dark text-decoration-underline">Yellow</a>
+          <a href="#" class="fw-semibold text-dark text-decoration-underline">Green</a>
+        </div>
+      </div>
+  
+      <!-- Mobile Fullscreen Menu -->
+      <div id="mobileNav" class="mobile-nav d-lg-none">
+        <div class="mobile-header">
+          <img src="/src/assets/img/Logo.svg" alt="Logo" loading="lazy" />
+          <button class="btn-close-main" aria-label="Chiudi menu">
+            <img src="/src/assets/img/close-menu.svg" alt="Chiudi" width="24" height="24" loading="lazy" />
+          </button>
+        </div>
+
+        <!-- Menu principale -->
+        <ul class="mobile-menu list-unstyled">
+          <li><a class="link-perrots" href="#">Pirate</a></li>
+          <li>
+            <button class="submenu-toggle">
+              Parrots
+              <img src="/src/assets/img/mobile-arrow-right.svg" alt="Vai al sottomenu" width="20" height="20" loading="lazy" />
+            </button>
+          </li>
+          <li><a class="link-perrots" href="#">Ships</a></li>
+          <li><a class="link-perrots" href="#">Events</a></li>
+        </ul>
+
+        <div class="mobile-contacts text-center">
+          <a href="#" class="btn btn-warning fw-semibold px-3 btn-contacts">Contacts</a>
+        </div>
+
+        <!-- Submenu Parrots -->
+        <div class="mobile-submenu d-none">
+          <div class="mobile-header d-flex justify-content-between align-items-center">
+            <img src="/src/assets/img/Logo.svg" alt="Logo" class="logo" />
+            <button class="btn-close-submenu" aria-label="Chiudi submenu">
+              <img src="/src/assets/img/close-menu.svg" alt="Chiudi" width="24" height="24" loading="lazy" />
+            </button>
+          </div>
+        
+          <div class="back-wrapper mb-3">
+            <button class="btn-back" aria-label="Torna indietro">
+              <img src="/src/assets/img/mobile-arrow-left.svg" alt="Indietro" width="24" height="24" loading="lazy" />
+            </button>
+          </div>
+        
+          <ul class="list-unstyled">
+            <li><a class="link-perrots" href="#">Red</a></li>
+            <li><a class="link-perrots" href="#">Violet</a></li>
+            <li><a class="link-perrots" href="#">Yellow</a></li>
+            <li><a class="link-perrots" href="#">Green</a></li>
+          </ul>
+        
+          <div class="mobile-contacts text-center">
+            <a href="#" class="btn btn-warning fw-semibold px-3 btn-contacts">Contacts</a>
+          </div>
+        </div>
+    </div>
+  </section>
