@@ -1,0 +1,80 @@
+.title-events
+  font-size: 48px  
+  font-weight: 700
+  margin: 60px 0
+
+.event-card
+  overflow: hidden
+  border-radius: 0.5rem
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1)
+
+.read-more-btn
+  position: relative
+  white-space: nowrap
+  width: 1.5rem
+  padding: 0.25rem
+  transition: width 0.2s, padding 0.2s
+  background-color: #fec429
+  border-radius: 6px
+  color: #fff
+  font-weight: 600
+
+  &::after
+    content: '→'
+    transition: opacity 0.2s
+
+  @media (max-width: 991.98px)
+    width: auto
+    padding: 0.25rem 0.75rem
+
+    &::after
+      content: 'Read more →'
+
+@media (min-width: 992px)
+  .event-card:hover .read-more-btn
+    width: auto
+    padding: 0.25rem 0.75rem
+    color: #ffffff
+
+    &::after
+      content: 'Read more →'
+
+.box-arrow
+  padding-top: 50px !important
+
+.events-swiper
+  overflow: visible
+  padding-bottom: 54px
+
+  .swiper-slide
+    overflow: visible
+
+  .swiper-button-prev,
+  .swiper-button-next
+    --swiper-navigation-size: 26px
+    width: 26px
+    height: 26px
+    color: #000
+    stroke-width: 2px
+    bottom: 0
+    top: auto !important
+    opacity: 0.9
+    transition: color 0.2s
+
+  .swiper-button-prev
+    left: 77% !important
+
+  .swiper-button-next
+    left: 91% !important
+
+.swiper-button-prev::after,
+.swiper-button-next::after
+  display: none
+
+.arrow-icon
+  width: 32px
+  height: 32px
+  filter: brightness(0)
+
+.rotate-left
+  transform: rotate(180deg)

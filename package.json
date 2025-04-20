@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.86.3",
     "vite": "^6.3.1",
     "vite-plugin-static-copy": "^2.3.1"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
     "hamburgers": "^1.2.1",
-    "sass": "^1.86.3",
     "swiper": "^11.2.6"
   }
 }

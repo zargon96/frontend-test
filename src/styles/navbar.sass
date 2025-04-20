@@ -1,0 +1,222 @@
+@import "hamburgers/_sass/hamburgers/hamburgers"
+
+
+.navbar-container
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 1030
+
+  .navbar
+    background-color: transparent !important
+    transition: background-color 0.3s ease
+
+  #mainNavbar.navbar-scrolled
+    background-color: #ffffff !important
+
+    .nav-link
+      color: #000 !important
+
+    .arrow-icon
+      filter: invert(1)
+      width: 28px
+      height: 28px
+      display: inline-block
+
+    .btn-contacts
+      color: #fff !important
+
+    .navbar-brand img
+      background-color: #E8B931
+
+  .navbar-brand img
+    border-radius: 50%
+    transition: transform 0.3s ease
+    transform: scale(1)
+
+  #mainNavbar.navbar-scrolled .navbar-brand img
+    transform: scale(0.8)
+
+  .navbar-nav
+    font-size: 29px
+    gap: 29px
+
+  .parrots-wrapper
+    position: relative
+
+    .arrow-icon
+      filter: invert(0)
+      transition: transform 0.3s ease
+      width: 28px
+      height: 28px
+      display: inline-block
+
+    &:hover .arrow-icon
+      transform: rotate(180deg)
+
+  .btn-contacts
+    color: #fff !important
+
+  .parrots-bar
+    display: none
+    width: 100%
+    padding: 0.75rem 2rem
+    background-color: #fff
+    z-index: 1020
+    position: relative
+
+    a
+      text-decoration: none !important
+      font-size: 29px
+      color: #000
+
+  &:has(#parrotsTrigger:hover) .parrots-bar
+    display: flex
+
+@media (max-width: 991.98px)
+  .mobile-nav
+    display: none
+    position: fixed !important
+    inset: 0
+    background-color: #fff
+    z-index: 9999 !important
+    flex-direction: column
+    justify-content: space-between
+    height: 100vh
+    overflow-y: auto
+    padding: 1.5rem
+
+  a.btn.btn-warning.fw-semibold.px-3.btn-contacts
+    text-align: center
+    padding: 4px
+    font-size: 20px
+
+  .mobile-nav.open
+    display: flex !important
+
+  .hamburger
+    padding: 0
+    border: none
+    background: none
+    outline: none
+
+  .hamburger .hamburger-inner,
+  .hamburger .hamburger-inner::before,
+  .hamburger .hamburger-inner::after
+    background-color: #E8B931
+
+  .mobile-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 2rem
+    padding: 0 1rem
+
+  .mobile-header img.logo
+    width: 64px
+    height: 64px
+    background-color: #E8B931
+    border-radius: 50%
+
+  .btn-close img
+    width: 24px
+    height: 24px
+
+  .submenu-toggle img,
+  .btn-back img
+    margin-left: 0.5rem
+    vertical-align: middle
+    width: 20px
+    height: 32px
+
+  .mobile-menu,
+  .mobile-submenu
+    padding: 0 1rem
+
+  .mobile-menu li,
+  .mobile-submenu li
+    padding: 1rem 0
+
+  .border-only-red
+    border-top: 2px solid #000
+
+  .mobile-menu li:not(:last-child),
+  .mobile-submenu li:not(:last-child)
+    border-bottom: 2px solid #000
+
+  .mobile-menu a,
+  .mobile-menu button,
+  .mobile-submenu a
+    font-size: 29px
+    font-weight: 700
+    color: #000
+    background: none
+    border: none
+    width: 100%
+    text-align: left
+    padding: 0
+
+  .submenu-toggle
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    background: none
+    border: none
+    padding: 1rem 0
+    font-size: 1.25rem
+
+  .mobile-submenu
+    position: absolute
+    inset: 0
+    z-index: 1060
+    background-color: #fff
+    height: 100vh
+    padding: 1rem
+    transform: translateX(100%)
+    transition: transform 0.3s ease-in-out
+    display: flex
+    flex-direction: column
+
+  button.btn-close-submenu,
+  button.btn-close-main
+    border: none
+    background: none
+
+  .link-perrots
+    text-decoration: none !important
+
+  .mobile-submenu.show
+    transform: translateX(0)
+    padding: 2rem
+
+  .mobile-submenu.d-none
+    display: none !important
+
+  .btn-back
+    background: none
+    border: none
+    padding: 0
+    font-size: 1.25rem
+    display: flex
+    align-items: center
+    gap: 0.5rem
+    margin-bottom: -1.5rem
+
+  .btn-back:hover img
+    filter: brightness(0)
+
+  .mobile-contacts
+    margin-top: auto
+    text-align: center
+
+    a.btn
+      margin-bottom: 22rem
+      max-width: 160px
+      width: 100%
+      display: inline-block
+      font-weight: 600
+      background-color: #FEC429
+      color: #fff
+      border-radius: 6px

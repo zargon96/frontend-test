@@ -1,11 +1,11 @@
-import "../styles/main.scss";
-import "../styles/navbar.scss";
-import "../styles/hero.scss";
-import "../styles/description.scss";
-import "../styles/features.scss";
-import "../styles/cards.scss";
-import "../styles/timeline.scss";
-import "../styles/footer.scss";
+import "../styles/main.sass";
+import "../styles/navbar.sass";
+import "../styles/hero.sass"; 
+import "../styles/description.sass";
+import "../styles/features.sass";
+import "../styles/cards.sass";
+import "../styles/timeline.sass";
+import "../styles/footer.sass";
 import * as bootstrap from "bootstrap";
 
 import { handleNavbarScroll } from "./navbar.js";
