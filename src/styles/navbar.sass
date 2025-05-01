@@ -1,5 +1,10 @@
 @import "hamburgers/_sass/hamburgers/hamburgers"
 
+// -----------------------------------------------------------------------------
+//  NAVBAR  DESKTOP 
+// -----------------------------------------------------------------------------
+a.navbar-brand.d-flex.align-items-center 
+  padding-bottom: 20px
 
 .navbar-container
   position: fixed
@@ -8,46 +13,58 @@
   width: 100%
   z-index: 1030
 
+
   .navbar
     background-color: transparent !important
-    transition: background-color 0.3s ease
+    transition: background-color .3s ease
 
   #mainNavbar.navbar-scrolled
-    background-color: #ffffff !important
+    background-color: #ffffff !important   
 
     .nav-link
-      color: #000 !important
+      color: #000 !important               
 
     .arrow-icon
-      filter: invert(1)
+      filter: invert(1)                    
       width: 28px
       height: 28px
       display: inline-block
 
     .btn-contacts
-      color: #fff !important
+      color: #fff !important               
 
     .navbar-brand img
-      background-color: #E8B931
+      background-color: #E8B931            
 
+  // ----------------------------------------
+  //  logo scale-in / out
+  // ----------------------------------------
   .navbar-brand img
     border-radius: 50%
-    transition: transform 0.3s ease
+    transition: transform .3s ease
     transform: scale(1)
 
   #mainNavbar.navbar-scrolled .navbar-brand img
-    transform: scale(0.8)
+    transform: scale(.8)
 
+  // ----------------------------------------
+  //  voci menu
+  // ----------------------------------------
   .navbar-nav
     font-size: 29px
     gap: 29px
 
+  // ---------------------------------------------------------------------------
+  //  PARROTS WRAPPER + DROPDOWN DESKTOP
+  // ---------------------------------------------------------------------------
   .parrots-wrapper
-    position: relative
+    position: relative  
 
+
+    // freccia
     .arrow-icon
       filter: invert(0)
-      transition: transform 0.3s ease
+      transition: transform .3s ease
       width: 28px
       height: 28px
       display: inline-block
@@ -55,25 +72,35 @@
     &:hover .arrow-icon
       transform: rotate(180deg)
 
+    // ----- barra dropdown -----------------------------------------------------
+    .parrots-bar
+      display: none                        
+      position: absolute
+      top: 100%                             
+      left: 100%
+      transform: translateX(-50%)
+      width: 110vw       
+      padding: .75rem 2rem
+      background-color: #fff
+      z-index: 1020
+
+      a
+        text-decoration: none !important
+        font-size: 29px
+        color: #000
+
+   
+    &:hover .parrots-bar
+      display: flex
+
+
+  //
   .btn-contacts
     color: #fff !important
 
-  .parrots-bar
-    display: none
-    width: 100%
-    padding: 0.75rem 2rem
-    background-color: #fff
-    z-index: 1020
-    position: relative
-
-    a
-      text-decoration: none !important
-      font-size: 29px
-      color: #000
-
-  &:has(#parrotsTrigger:hover) .parrots-bar
-    display: flex
-
+// -----------------------------------------------------------------------------
+//  MOBILE  (≤ 991 px)
+// -----------------------------------------------------------------------------
 @media (max-width: 991.98px)
   .mobile-nav
     display: none
@@ -125,7 +152,7 @@
 
   .submenu-toggle img,
   .btn-back img
-    margin-left: 0.5rem
+    margin-left: .5rem
     vertical-align: middle
     width: 20px
     height: 32px
@@ -175,7 +202,7 @@
     height: 100vh
     padding: 1rem
     transform: translateX(100%)
-    transition: transform 0.3s ease-in-out
+    transition: transform .3s ease-in-out
     display: flex
     flex-direction: column
 
@@ -201,7 +228,7 @@
     font-size: 1.25rem
     display: flex
     align-items: center
-    gap: 0.5rem
+    gap: .5rem
     margin-bottom: -1.5rem
 
   .btn-back:hover img
